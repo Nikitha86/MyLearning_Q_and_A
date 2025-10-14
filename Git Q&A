@@ -1,1 +1,178 @@
-What
+1. What is Git/ Source Code Management ?
+
+Git means Global Information Tool. It is free and open source.
+Git is a version control system (VCS) or Source Code Management (SCM).
+It is used to track the files.
+It is a platform independent tool.
+We can maintain multiple versions of same file.
+It is written in C programming on 2005 by Linus Torvalds.
+
+-----------------------------
+
+2. Why Git?
+
+Git tracks changes we made, so we have a record of what we done or who and when changes made. 
+We can revert to specific versions, it makes collaboration easy, allowing changes by multiple people to all merged into one source.
+
+------------------------------
+3. Difference between SVN and Git?
+
+-------------------------------------
+4. Difference between CVS vs Git?
+
+-----------------------------------------
+5. Difference between Git and GitHub?
+
+-----------------------------------------------
+
+6. What are Git stages?
+
+There are 3 stages in Git:
+1. Working directory:- Initially you create a files that is present in this working directory. Git is only aware of having files in the project.
+It will not track the files. If you want to track a file then we have to use git add.
+2. Staging area:- It contains all tracking files. It is like a playground to developers. They can add code or remove code anything they can do. Once modifications are done next we can save the changes then give git commit.
+3. Repository:-  It contains our project final code, When we commit the file it will store in repository.
+It contains collection of files and history of changes made to those files.
+
+We have two types of repository. 1. Local 2. Remote
+
+-------------------------
+
+7. What is git status?
+
+Git status is used to know the tracking and untracking files in our server.
+
+---------------------------
+
+8. How to track a file in Git?
+
+To track a file in git we use git add filename.
+Once we add file moves to staging area and it gets started tracking, so that we know every modifications of the file.
+
+----------------------------------
+
+9. How to commit a file?
+
+To commit a file we use command called git commit -m "message" filename. 
+Without commit message we can't commit the file.
+Once we commit the file it will not show in git status. After if you have done some modifications then only it will show in status.
+
+------------------------
+
+10. What is git log?
+
+We can see list of all commits. Recent commits will always show on top. It will show author name, date, time and commit message. 
+For every commit it will always generate automatic unique id. 
+
+---------------------------------------
+
+11. How to configure in Git?
+
+To change root/author name and change email we have to do configure.
+git config user.name "username"
+git config user.email "email"
+
+---------------------
+
+12. What is git show?
+
+To see complete information, who made changes, added new lines or deleted code, time and commit message everything we can see.
+
+-------------------
+
+13.  What is git amend/ How to change the commit message?
+
+Amend is used to change the commit information(author name Or commit message). 
+To change author details git commit --amend --author "username <email>"
+To change commit message: git commit --amend -m "commit message"
+,commit id will automatically get changed. It will work only for latest commit.
+We can also attach all the files which are present in staging area to the previous commit using amend command: git commit --amend --no-edit
+
+------------------------
+14. How to send the files from staging area to working directory? (OR) How to untrack the file?
+
+To untrack a file we use command called: git rm --cached filename
+
+-----------------------------------------
+
+15. What is .gitignore?
+
+If you kept a file or folder in .gitignore file it will not track until you removed. If you want to track the files which is present in .gitignore we use command called: git add -f *
+Once you kept file in .gitignore, when you give ll command you will see filename, but when you check in git status it will not show until and unless you remove from .gitignore
+
+-----------------------------------
+
+16. What is git reset soft and git reset hard?
+
+Soft command is used to delete only commit. git reset --soft HEAD~1 (top 1 commit will get deleted)
+
+Hard command is used to delete commit and its action.  git reset --hard HEAD~1 (top 1 commit and its action gets deleted)
+
+---------------------------------
+
+17. What is git reflog?
+
+Git reflog is used to see list of all commits as well as deleted commits.
+
+-----------------------------------
+
+18. What is Cherry pick? 
+
+We can use cherry-pick in two ways.
+1. By using cherry-pick we can get back deleted commits. After restoring deleted commit, commit id will automatically change.
+  git cherry-pick commit_id (If you forgot to note commit id by git reflog you will get all commits including deleted commits, based on commit message you can select the commit id)
+
+2. If we want to take only few commits to another branch we will give specific commit ids. git cherry-pick commit_id1 commit_id2 ......
+
+----------------------------------------------
+
+19. What is Git Branch?
+ 
+A Git branch is a way to isolate development in a Git repository, allowing multiple developers to work on different features, bug fixes,
+or experiments simultaneously without affecting the main codebase. Branches help organise work, support collaboration, and enables safe integration changes.
+
+--------------------------
+
+20. What is Git Checkout?
+
+Git checkout is used to switch the branches.
+
+--------------------------
+21. Is it possible to create multiple branches at a time?
+
+Not possible to create multiple branches at a time. But possible to delete multiple branches at a time
+
+------------------------------
+
+22. How to change branch name in Git?
+
+There is a command to change branch name: git branch -m oldname newbranchname
+-m ==> Modification
+
+-------------------
+
+23. What is Git Merge?
+
+It allows us to get the code from one branch to another. This is useful when developers work on the same code and want to integrate their changes before pushing them up in a branch.
+Whenever we do merging it will automatically copy all commits & files from one branch to another branch.
+
+------------------------------------
+
+24. What is git push?
+
+25. What is git pull?
+
+26. What is git clone?
+
+27. what is git Fork?
+
+28. Difference between Git Clone and Git Fork?
+
+29. What is git branching Strategies?
+
+30. From which branch do you usually perform releases?
+
+
+
+
+
