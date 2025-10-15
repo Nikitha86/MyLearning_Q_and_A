@@ -172,9 +172,69 @@ Whenever we do merging it will automatically copy all commits & files from one b
 
 30. From which branch do you usually perform releases?
 
-
-
-
 31. Difference between Git pull vs Git Fetch?
 
+32. What is Git Restore command?
 
+33. What is Git revert?
+
+34. What is Merge conflicts in Git and how to resolve them?
+
+35. What is git rebase?
+
+36. Difference between git merge and git rebase?
+
+37. What is git stash?
+
+38. Difference bewteen git push and git pull?
+
+39.  How to integrate Git with GitHub?
+
+-------------------------------------------------------
+
+40. Difference between Git Clone and Git Pull?
+
+-------------------------------------------------------
+41. What is Git Fetch?
+
+-------------------------------------------------------
+
+42. What is Git diff?
+
+------------------------------------------------
+43. How to resolve the git conflicts?
+* Open the file in vi editor and remove the conflict messages.
+* Save the file
+* Add the files using the git add command.
+* The last step is to commit the changes in the file
+------------------------------------------------
+44. What is git tag?
+Tagging is generally used to capture a point in history that is used for a marked version
+release.
+-------------------------------------------------
+45. How to change the commit message
+git commit —amend commit_id
+------------------------------------------------
+46. What is git blame?
+It is used to see the history of the GitHub file.
+--------------------------------------------------
+47. What is the common branching pattern in GIT?
+The common way of creating branch in GIT is to maintain one as “Main" branch and create another
+branch to implement new features. This pattern is particularly useful when there are multiple
+developers working on a single project.
+-------------------------------------------------
+48. What is a ‘conflict’ in git?
+A ‘conflict’ arises when the commit that has to be merged has some change in one place, and the
+current commit also has a change at the same place. Git will not be able to predict which change
+should take precedence.
+-------------------------------------------------------------
+49. How can conflict in git resolved?
+To resolve the conflict in git, edit the files to fix the conflicting changes and then add the resolved files
+by running “git add” after that to commit the repaired merge, run “git commit”. Git remembers that
+you are in the middle of a merger, so it sets the parents of the commit correctly.
+---------------------------------------------------
+
+50. What is the difference between ‘git remote’ and ‘git clone’?
+‘Git remote add’ just creates an entry in your git config that specifies a name for a
+particular URL. While, ‘git clone’ creates a new git repository by copying and existing one located at
+the URI.
