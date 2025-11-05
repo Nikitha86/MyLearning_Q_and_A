@@ -1,0 +1,103 @@
+*Linux Commands:
+
+1. hostname --> It will display server name
+2. ping --> It is used to check server is pingable(Server up or down) or not.
+3. clear --> To clear the screen
+4. ls --> short listing. It will display files
+5. ll --> Long listing. It will display files
+6. touch  --> It is used to create file
+7. mkdir --> To create directory
+8. rmdir --> To remove empty directory
+9. ls-ltr  --> It lists the files in ascending order based on time (latest)
+10.ls -lrt --> It lists files in descending order
+   ls -lt --> It lists files in descending order
+11. ls -laas  --> It lists all files including hidden files which are present in server.
+12. vi filename  --> We can able to create a file, edit a file or view a file.
+13. cat  --> It is used to create a file, add a data into file. We can see data in a file. 
+14. rm -rf dirname  --> To remove files/directories forcefully
+15. pwd: present working directory  --> To see current path 
+16. cd .. --> To change the current directory. By using this we can come one step back i.e parent directory
+17. cp --> To copy data from one file to another file/another directory
+18. mv --> 1. To move a file from one place to another place. 2. To rename a file
+19. cd --> to change directory
+20. rm --> To remove a file
+21. df  --> To check disk utilisation 
+22. df -m --> It displays disk utilisation in MB format
+23. df -h  --> It displays disk utilisation in human readable format
+24. du -sh --> displays size of a file
+25. du -sh * --> to check all files size at a time
+26. > filename --> To delete/reduce a data without deleting the file
+27. history  --> To see history of commands which we executed
+28. gzip --> To compress a file
+29. gunzip  --> To uncompress a file
+30. sudo su --> To switch to root user
+31. df -kh /dev  --> To check disk utilisation specifically for /dev filesystem in human readable format
+32. df -TH /dev --> to check disk utilisation for /dev filesystem and its type of filesystem
+33. rm -rf dnf.* --> to remove a all files which starts with dnf.
+34. echo 1 >  /proc/sys/vm/drop_caches --> To reduce memory utilisation
+35. echo 2 >  /proc/sys/vm/drop_caches --> To reduce memory utilisation
+36. echo 3 >  /proc/sys/vm/drop_caches --> To reduce memory utilisation
+37. free  --> to check memory utilisation in kb format
+38. free -m --> it displays memory utilisation in MB format
+39. free -h --> displays memory utilisation in human readable format
+40. TOP --> To see system running processor, system load average, uptime,how many users logged in
+41. Kill -9 PID.  --> To kill a processor
+42. iostat --> to check cpu utilisation
+43. vmstat --> to check cpu utilisation
+44. ps -ef | grep httpd  --> to check process/application is running or not
+45. service httpd status --> to check a service status
+46. service httpd start --> to start a service
+47. service httpd stop --> to stop a service
+48. service httpd restart --> to restart/running a service
+49. yum install httpd --> to install a service
+50. ps --> to see list of processors
+51. ps -ef --> shows present background OS running processors and its information
+52. chmod --> to change permissions of a file
+53. chown --> to change owner/user of a file 
+54. useradd --> to create a user
+55. groupadd --> to create a group
+56. cat /etc/passwd --> to see list of users
+57. cat /etc/group --> to see list of groups
+58. chgrp --> to change group of a file
+59. head --> to display first 10 lines 
+60. tail --> to display last 10 lines 
+61. head -n filename --> displays specific number of lines
+62. tail -n filename --> display last specific number of lines
+63. more --> It will display data without space and data segregation and once data displayed it will come to next line automatically
+64. less --> It will first display space and then display data and will not come to next line. we have to exit the screen manually
+65. man --> it will displays manual for a command
+66. exit --> to exit the user
+67. find --> to find a specific file in list of bunches of files
+68. locate --> to search a file
+69. ipconfig --> shows current ip address, network information
+70. curl ifconfig.me --> to get current system public ip address
+71. hostname -i --> displays ip address of a server
+72. sudo init6 --> If server not working properly, To reboot a server without going to aws console.
+73. cat /etc/red-release --> it will show redhat distribution version details
+74. uname -r --> to see kernel version 
+75. uname -a --> to get all details of operating system
+76. date --> to display date and time
+77. cal --> to display current month calendar
+78. telnet --> to display text-based network connection to a server
+79. userdel --> to delete a user
+80. tree --> it will display data in tree like structure
+81. vi -o filename1 filename2 --> opens two files side by side in the vi editor by splitting the window vertically
+82. ls -R --> displays file in reverse order
+83. netstat --> displays information about network connections, routing tables, interfaces and ports
+84. wget --> to download files from internet
+85. yum install --> to install a package/service
+86. yum update --> to update packages/service
+87. ls * filename --> to see all files
+88. users --> displays list of users in current server
+89. whoami --> it will display current user name
+90. lshw --> display detailed hardware information
+91.vim --> to create,edit,view a file
+92. fdisk -l --> displays disk partitions
+93. last reboot --> display last reboot of a server
+94. df -i --> to display inodes usage of file system
+95. passwd username --> to set a password for a user
+96. tar --> to compress multiple files and directories
+97. diff --> to see difference in two files
+98. curl --> To see application is active/running or not in server and interacting with remote servers.
+99. scp --> to copy files from one server to another server
+100. ssh --> it will help us to establish a connection between two servers
